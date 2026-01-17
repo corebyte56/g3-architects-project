@@ -24,7 +24,7 @@ li {
 }
 
 .btn {
-     background-color: #E07F24;
+     background-color: #FF900E;
      color: white;
      padding: 1.25rem 2rem;
      border-radius: 0.5rem;
@@ -33,7 +33,9 @@ li {
      margin-bottom: 50px;
      cursor: pointer;
 }
-
+p{
+     line-height: 26px;
+}
 
 /* main styles */
 
@@ -146,4 +148,73 @@ header {
      text-align: left;
      margin-bottom: 20px;
      color: #727272;
+}
+
+/* experience section */
+#experience {
+     padding-top: 100px;
+     margin: 0 100px 0 100px;
+}
+
+#experience .experience-container {
+     display: flex;
+     justify-content: space-around ;
+     align-items: center;
+     margin: 0 auto;
+     gap: 100px;
+}
+
+.experience-content {
+     width: 50%;
+     /* margin-left:70px */
+}
+
+.experience-content h1 {
+     font-size: 3rem;
+     margin-bottom: 20px;
+     border-left: 5px solid #FF900E;
+     padding: 10px;
+}
+
+.experience-content p {
+     font-size: 1rem;
+     text-align: left;
+     margin-bottom: 20px;
+     color: #727272;
+}
+
+.card-container {
+     display: grid;
+     grid-template-rows: repeat(2, 1fr);
+     gap: 20px;
+}
+
+.card {
+     background-color:#FFFF;
+     padding: 30px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     border-radius: 8px;
+}
+
+.card h4 {
+     font-size: 1.25rem;
+     margin-bottom:10px;
+     font-weight: 600;
+}
+
+.card p{
+     font-size: 1rem;
+}
+
+.experience-img  {
+     width: 800px;
+}
+.experience-img img {
+     width: 700px;
+}
+
+.experience-img button {
+     padding: 30px;
+     margin-top: -100px;
+     margin-left: -60px;
 }
