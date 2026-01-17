@@ -329,7 +329,7 @@ footer .footer-container p {
 
 
 /* responsive design */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 640px) {
 
      img {
           width: 100%;
@@ -350,6 +350,12 @@ footer .footer-container p {
           gap: 10px;
      }
 
+     .container .menu ul {
+     
+     justify-content: space-around;
+     gap: 20px;
+     
+     }
      .banner-img {
           width: 100%;
      }
@@ -431,4 +437,4 @@ footer .footer-container p {
      .sponsors-logo img {
      width: 90px;
 }
-}
+} 
