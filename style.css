@@ -29,25 +29,39 @@ a {
      text-decoration: none;
      color: #424242;
      font-size: 1.125rem;
+     transition: color 0.3s ease;
 }
+
+a:hover{
+     color: #FF900E;
+} 
 
 li {
      list-style: none;
 }
 
 .btn {
-     background-color: #FF900E;
-     font-size: 1.25rem;
-     color: white;
-     padding: 1.25rem 2rem;
-     border-radius: 0.5rem;
-     border: none;
-     font-weight: bold;
-     margin-bottom: 50px;
-     cursor: pointer;
+    background-color: #FF900E;
+    font-size: 1.25rem;
+    color: white;
+    padding: 1.25rem 2rem;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+    font-weight: bold;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-p {
+.btn:hover {
+    background-color: transparent;
+    color: #FF900E;
+    border-color: #FF900E;
+}
+
+
+
+p { 
      line-height: 26px;
      color: #727272;
      font-size: 1rem;
@@ -212,7 +226,17 @@ header {
      padding: 30px;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
      border-radius: 8px;
+   transition:transform 0.35s ease,box-shadow 0.35s ease,background-color 0.35s ease;
 }
+
+.card:hover {
+  transform: translateY(-10px);
+  background-color: #fff;
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.45),
+    0 0 30px rgba(140, 80, 255, 0.35);
+}
+
 
 .card h4 {
      font-size: 1.25rem;
@@ -273,6 +297,15 @@ header {
      border: 2px solid #FF900E;
      border-radius: 8px;
      padding: 40px;
+     transition:transform 0.35s ease,box-shadow 0.35s ease,background-color 0.35s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px);
+  background-color: #FFF4E7;
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.45),
+    0 0 30px rgba(140, 80, 255, 0.35);
 }
 
 .achievement-card img {
@@ -303,7 +336,7 @@ header {
 
 .sponsors-logo {
      display: flex;
-     justify-content: space-around;
+     justify-content: center;
      gap: 100px;
 }
 
@@ -429,7 +462,14 @@ footer .footer-container p {
      gap: 50px;
      }
 
-     .achievement, .sponsors-logo {
+     .achievement {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 15px;
+     }
+
+     .sponsors-logo {
+     justify-content: space-evenly;     
      flex-wrap: wrap;
      gap: 50px;
      }
